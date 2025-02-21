@@ -10,7 +10,7 @@ Array.from(botoesApagar).forEach((botao) => {
 // Função responsável por quesitonar o usuário se o mesmo deseja realmente apagar aquele registro
 function apagar() {
     Swal.fire({
-        title: "ADeseja apagar o cdastro da empresa?",
+        title: "Deseja apagar o cadastro da empresa?",
         text: "Você não poderá reverter isso!",
         icon: "warning",
         showCancelButton: true,
