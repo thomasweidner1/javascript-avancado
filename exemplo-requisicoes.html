@@ -15,11 +15,13 @@
         <a href="exemplo-requisicoes.html" class="btn btn-primary"><i class="fas fa-home"></i> Home</a>
     </header>
         <div class="text-end mt-3 me-3">
+            <button id="consultar-empresas" class="btn btn-primary"><i class="fas fa-spinner"></i> Consultar Empresa</button>
             <a href="cadastro.html" class="btn btn-primary"><i class="fas fa-plus"></i> Cadastrar Empresa</a>
         </div>
+        
 
     <div class="p-3">
-        <table class="table table-bordered table-hover m-3">
+        <table class="table table-bordered table-hover m-3" id="tabela-empresas">
             <thead>
                 <tr>
                     <td>Código</td>
@@ -27,25 +29,9 @@
                     <td>CNPJ</td>
                     <td>Ação</td>
                 </tr>
-                <tr>
-                    <td>1</td>
-                    <td>WEG</td>
-                    <td>94.129.994/0001-60</td>
-                    <td>
-                        <a href="editar.html" class="btn btn-warning"><i class="fas fa-pencil"></i> Editar</a>
-                        <button class="btn btn-danger botao-apagar"><i class="fas fa-trash"></i> Apagar</button>
-                    </td>
-                </tr>
-                <tr></tr>
-                <td>2</td>
-                <td>AmbevTech</td>
-                <td>77.599.584/0001-98</td>
-                <td>
-                    <a href="editar.html" class="btn btn-warning"><i class="fas fa-pencil"></i> Editar</a>
-                    <button class="btn btn-danger botao-apagar"><i class="fas fa-trash"></i> Apagar</button>
-                </td>
-                </tr>
             </thead>
+            <tbody>
+            </tbody>
         </table>
     </div>
 
