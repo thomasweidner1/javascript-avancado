@@ -56,3 +56,11 @@ Como depurar no navegador o código JavaScript:
 PS.: Breakpoint é um ponto de parada, mesma coisa que o debugger.
 
 Depurar é a ação de analisar um problema, linha a linha.
+
+https => protocolo
+dominio => franciscosensaulas.com
+porta => 2000
+recurso => /api/v1/empresa
+query_params (variáveis) => id (valor do id é 20)
+
+https://franciscosensaulas.com:2000/api/v1/empresa?id=20
