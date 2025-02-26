@@ -17,7 +17,7 @@ async function consultarDadosEmpresaPorId(){
 
     if(resposta.ok == false){
         alert("Empresa não encontrada");
-        window.location.href = "/exemplo-requisicoes.html";
+        window.location.href = "/index.html";
         return;
     }
 
@@ -48,7 +48,7 @@ async function  editar(evento) {
     if (resposta.ok == false) {
         alert("Não foi possível alterar")
     } else {
-        location.href = '/exemplo-requisicoes.html'
+        location.href = '../empresa/index.html'
     }
 }
 
