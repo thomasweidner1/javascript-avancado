@@ -1,7 +1,7 @@
 let tabelaProdutos = document.getElementById("tabela-produtos");
 let botaoListarProdutos = document.getElementById("listar-produtos");
 
-let urlAPI = "https://api.franciscosens.com";
+let urlAPI = "https://public.franciscosensaulas.com";
 function atribuirCliqueBotoesApagar(){
     let botoesApagar = document.getElementsByClassName("botao-apagar");
 
@@ -11,6 +11,8 @@ function atribuirCliqueBotoesApagar(){
 };
 
 async function apagar(evento) {
+
+    const botaoClique = evento.target;
     const nome = botaoClique.getAttribute("data-nome");
     const id = botaoClique.getAttribute("data-id");
     Swal.fire({

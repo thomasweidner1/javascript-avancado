@@ -1,4 +1,4 @@
-let urlAPI = "https://api.franciscosens.com";
+let urlAPI = "https://public.franciscosensaulas.com";
 let botaoSalvar = document.getElementById("btn-salvar");
 botaoSalvar.addEventListener("click", salvar);
 
@@ -10,12 +10,14 @@ async function salvar(e) {
     let campoPreco = document.getElementById("campoPreco");
     let preco = campoPreco.value;
     let campoCategoria = document.getElementById("campoCategoria")
-    let categoria = campoCategoria.value;
+    let categoria = campoCategoria.options[campoCategoria.selectedIndex].text;
+    
     const dados = {
         nome: nome,
         preco: preco,
         categoria: categoria
     }
+
     const resposta = await fetch(url, {
         method: "POST",
         headers: {"Content-Type": "application/json"},
@@ -25,7 +27,7 @@ async function salvar(e) {
     if(resposta.ok == false){
         alert("Não foi possível cadastrar o produto")
     }else{
-        location.href = "../produto/index"
+        location.href = "../produto/index.html"
     }
 
     console.log(dados)
